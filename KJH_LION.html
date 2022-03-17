@@ -6,38 +6,35 @@
     <title>2차 과제</title>
     <link rel="stylesheet" href="KJH_LION.css" />
     <link rel="short icon" href="KJH_LION_img/icon_check.png" />
+    <script type="text/javascript" defer src="KJH_LION.js"></script>
   </head>
   <body>
-    <!-- 최종 제출 전에 이 주석들 모두 삭제하기! -->
-    <!-- ******* class 명이나 css명, 레이아웃, 디자인 등등 다 수정하기!!!! ******* -->
-    <!-- ******* 인터넷 참고해서 부족한 부분 & 추가적인 센스나 기능 추가하기!!!! ******* -->
-    <!-- ******* 리팩토링 하고, 강의 1개 안본거 보면서 혹시 추가할 부분 있으면 하기 ******* -->
-    <!-- ******* 자기소개 과제도 마무리하기!!!! ******* -->
-    <!-- ******* 파일명이나 안내사항 등등 다 재확인하기! ******* -->
-    <!-- ******* 수정한 거 있으면 push 하기 => 제출 이후에 바로 깃허브 public 하지 말고 나~중에 허락받고 하기! ******* -->
-    <!-- 멋사에 보낸 질문 확인하고, js나 css 로 기능추가 가능하다 하면, 조금 더 추가하기 => js 파일에 뭐라도 추가하는 게 좋지 않을까? -->
-    <!-- 만약 js파일에 아무것도 안 적을 거면, js 파일 삭제해서 보내야 함! -->
-    <!-- 디자인 파일 (KJH_LION_img) 파일명 바꾸면 안된다고 하면 => 파일명 되돌려놓고, 코드도 수정하기! -->
     <div class="container">
       <div class="inner">
         <div class="header">
           <span class="title">
             로그인 또는 회원가입
-            <img src="KJH_LION_img/close.png" alt=""
+            <img onclick="closeLogin()" src="KJH_LION_img/close.png" alt=""
           /></span>
         </div>
         <div class="login">
           <div class="login-type">
             <h3>위니브에서 여러분의 궁금증을 해결하세요! :)</h3>
             <span class="maintain">
-              <img src="KJH_LION_img/icon_check_empty.png" alt="" />
+              <img
+                onclick="changeImg()"
+                src="KJH_LION_img/icon_check_empty.png"
+                alt=""
+              />
               로그인 상태 유지
             </span>
-            <a class="login-btn" href=""><span>로그인</span></a>
+            <a class="login-btn" href="" onclick="Login()"
+              ><span>로그인</span></a
+            >
             <span class="info">
-              <span class="signup">회원가입</span>
+              <span>회원가입</span>
               <span class="middle"></span>
-              <span class="find">아이디/비밀번호 찾기</span>
+              <span>아이디/비밀번호 찾기</span>
             </span>
             <span class="or-txt">또는</span>
             <a class="btn btn1" href="https://www.google.com/"
